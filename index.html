@@ -7,21 +7,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>to do list</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/js-confetti@latest/dist/js-confetti.browser.js"></script>
 </head>
 
 <body class="bg-gradient-to-r from-[#201E43] via-[#134B70] to-[#508C9B]">
-    <div class="h-full w-full flex  items-center flex-col">
-        <h1 class="text-white font-bold text-[75px]">To Do List</h1>
-        <div class="flex flex-row gap-3 py-6">
-            <input class="h-full py-4 pr-10 pl-4  w-full text-left rounded-[10px] outline-none placeholder-[#134B70]"
-                placeholder="write your plans" id="Input">
-            <button class=" text-[#ffff] rounded-[10px] p-4  bg-[#E4003A] " id="AddToDo">Add</button>
-        </div>
-        <div class=" text-center w-full flex  flex-col gap-1 items-center " id="toDoCont">
+    <div class="flex poppins rounded-[20px] text-white text-[60px] gap-10 justify-center  bg-[#117575ff]">
+        <h1>Watermelon</h1>
+        <h1>Lemon</h1>
+        <h1>Peach</h1>
+        <h1>Grape</h1>
+        <h1>Strawberry</h1>
+    </div>
+    <div class="flex w-full h-[200px] gap-10 mt-10">
+        <div class="flex w-[500px] justify-center" id="watermelon"></div>
+        <div class="flex w-[280px] justify-center" id="lemon"></div>
+        <div class="flex w-[250px] justify-center" id="peach"></div>
+        <div class="flex w-[250px] justify-center" id="grape"></div>
+        <div class="flex w-[450px] justify-center" id="strawberry"></div>
+    </div>
+    <div class=" w-full h-[150px] flex gap-10 justify-center  mt-10" id="startzone">
 
+        <div class="rounded-[20px] bg-[#117575ff] flex w-[500px]  justify-center" id="zone6">
+            <img class="w-auto" id="grape-item" draggable="true" src="images/icons8-фрукты-48 (3).png">
+        </div>
+        <div class="rounded-[20px] bg-[#117575ff] flex w-[280px] justify-center" id="zone7">
+            <img class="w-auto" id="peach-item" draggable="true" src="images/icons8-фрукты-48 (2).png">
+        </div>
+        <div class="rounded-[20px] bg-[#117575ff] flex w-[250px] justify-center" id="zone8">
+            <img class="w-auto" id="strawberry-item" draggable="true" src="images/icons8-фрукты-48.png">
+        </div>
+        <div class="rounded-[20px] bg-[#117575ff] flex w-[250px] justify-center" id="zone9">
+            <img class="w-auto" id="watermelon-item" draggable="true" src="images/icons8-арбуз-48.png">
+        </div>
+        <div class="rounded-[20px] bg-[#117575ff] flex w-[450px] justify-center" id="zone10">
+            <img class="w-auto" id="lemon-item" draggable="true" src="images/icons8-фрукты-48 (1).png">
         </div>
     </div>
-    <script src="main.js"></script>
+
 </body>
+<script src="main.js"></script>
 
 </html>
